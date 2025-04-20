@@ -1,0 +1,171 @@
+body {
+    background-color: #f5f8ff;
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+}
+
+.neobrutal-container {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.container-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+[data-testid="stDataFrame"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button[kind="primary"],
+button[kind="secondary"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button[kind="primary"]:hover,
+button[kind="secondary"]:hover {
+    background-color: #a8ccff;
+}
+
+[data-testid="stSlider"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+[data-baseweb="slider"] [role="slider"] {
+    background: #000000;
+}
+[data-baseweb="slider"] .slider-bar {
+    background: #000000;
+}
+
+[data-testid="stDateInput"],
+[data-testid="stTimeInput"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+[data-testid="stTextInput"], input[type="text"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+[data-testid="stTextArea"], input[type="text"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+[data-testid="stFileUploader"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+[data-testid="stNumberInput"], input[type="number"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+[data-baseweb="input"]:focus-within .css-1q9a12g-ValueContainer {
+    border-color: #000000;
+    box-shadow: 0 0 0 1px #000000;
+}
+
+pre {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+div[role="progressbar"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    height: 30px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+[data-testid="stCheckbox"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+[data-testid="stSelectbox"],
+[data-testid="stMultiSelect"] {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+[data-baseweb="select"] .css-1u9des2-control,
+[data-baseweb="select"] .css-1nmdiq5-control,
+[data-baseweb="select"] .css-13c1x9u-control,
+[data-baseweb="select"] .css-1fsijta-control {
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0 #000000;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+[data-baseweb="select"] .css-1u9des2-control:hover,
+[data-baseweb="select"] .css-1nmdiq5-control:hover,
+[data-baseweb="select"] .css-13c1x9u-control:hover,
+[data-baseweb="select"] .css-1fsijta-control:hover,
+[data-baseweb="select"] .css-1u9des2-control:focus-within,
+[data-baseweb="select"] .css-1nmdiq5-control:focus-within,
+[data-baseweb="select"] .css-13c1x9u-control:focus-within,
+[data-baseweb="select"] .css-1fsijta-control:focus-within {
+    border: 3px solid #000000;
+    box-shadow: 0 0 0 1px #000000;
+}
