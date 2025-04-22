@@ -2,6 +2,7 @@ import streamlit as st
 from generate_vectors import MoviesVectorDataBase
 import os
 
+
 db = MoviesVectorDataBase()
 db.generate_vectors()
 
@@ -54,20 +55,22 @@ def get_recommended_movies(search: str, n: int = 3):
 # Function to display the movie carousel
 def display_carousel(data):
     for movie in data:
-        col1, col2 = st.columns([3, 7])  # Defines two columns for layout
+        col1, col2, col3 = st.columns([3, 7, 2])  # Defines two columns for layout
         with col1:
             # Display the movie poster
             st.image(movie['poster'], use_container_width=True)
         with col2:
-            # Display movie title and relevant information
             st.subheader(movie['title'])
-            st.markdown(f"**Rating**: {movie['imdb_rating']}⭐")
+            st.markdown(movie['plot'][:400] + "...")
+            
+        with col3:
+            # Display movie title and relevant information
+            st.markdown(f"**Rating**: {movie['imdb_rating']}/10 ({movie['imdb_votes']})")
             st.markdown(f"**Genres**: {', '.join(movie['genres'])}")
             st.markdown(f"**Runtime**: {movie['runtime']} mins")
             st.markdown(f"**Cast**: {', '.join(movie['cast'])}")
             st.markdown(f"**Directors**: {', '.join(movie['directors'])}")
-            st.markdown(f"**Plot**: {movie['plot'][:250]}...")  # Displaying a portion of the plot
-            st.markdown(f"**Votes**: {movie['imdb_votes']}")
+        st.markdown("---")
 
 # Title of the carousel
 st.title("Movie Semantic Search")
