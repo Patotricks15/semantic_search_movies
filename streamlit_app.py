@@ -8,6 +8,12 @@ db.generate_vectors()
 
 # Function to load a CSS file and inject its content into the page
 def local_css(file_name):
+    """
+    Load a CSS file and inject its content into the page.
+
+    Args:
+        file_name (str): Path to the CSS file
+    """
     with open(file_name, "r", encoding="utf-8") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
@@ -27,6 +33,19 @@ db.generate_vectors()
 
 # Function to get recommended movies based on search term
 def get_recommended_movies(search: str, n: int = 3):
+    """
+    Retrieve a list of recommended movies based on the semantic similarity to a search term.
+
+    Args:
+        search (str): The search term used to find similar movie plots.
+        n (int, optional): The number of recommended movies to retrieve. Defaults to 3.
+
+    Returns:
+        list: A list of dictionaries, each containing details of a recommended movie,
+        including title, plot, genres, runtime, cast, number of comments, poster URL,
+        IMDb rating, IMDb votes, and directors.
+    """
+
     recommended_movies = []
     searches = db.client.query_points(
         collection_name="movies",
