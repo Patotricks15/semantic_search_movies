@@ -1,6 +1,7 @@
 import streamlit as st
 from generate_vectors import MoviesVectorDataBase
 import os
+import streamlit as st
 
 
 db = MoviesVectorDataBase()
@@ -23,9 +24,6 @@ local_css(css_path)
 
 css_path = os.path.join("css", "components.css")
 local_css(css_path)
-
-import streamlit as st
-from generate_vectors import MoviesVectorDataBase
 
 # Initialize the movie database
 db = MoviesVectorDataBase()
